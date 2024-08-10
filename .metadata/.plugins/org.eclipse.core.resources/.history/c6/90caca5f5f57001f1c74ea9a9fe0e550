@@ -1,0 +1,30 @@
+package service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import entity.Todo;
+import repository.TodoRepository;
+
+@Service
+public class TodoService {
+	private TodoRepository todoRepository;
+	 
+	public TodoService(TodoRepository todoRepository) {
+		this.todoRepository = todoRepository;
+	}
+	
+	public List<Todo> create(Todo todo){
+		TodoRepository.save(todo);
+	}
+	public List<Todo> list(){
+		TodoRepository.findAll(todo);
+	}
+	public List<Todo> update(){
+		TodoRepository.save(todo);
+	}
+	public List<Todo> delete(){
+		TodoRepository.save(todo);
+	}
+}
