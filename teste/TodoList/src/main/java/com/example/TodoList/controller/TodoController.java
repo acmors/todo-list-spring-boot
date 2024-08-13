@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.TodoList.entity.Todo;
 import com.example.TodoList.services.TodoService;
 
+import jakarta.validation.Valid;
+
 @RestController
 @RequestMapping("/todos")
 public class TodoController {
@@ -25,7 +27,7 @@ public class TodoController {
 	
 	
 	@PostMapping
-	List<Todo> create(@RequestBody Todo todo){
+	List<Todo> create(@RequestBody @Valid Todo todo){
 		return todoService.create(todo);
 	}
 	
@@ -40,7 +42,7 @@ public class TodoController {
 	}
 	
 	@DeleteMapping("{id}")
-	List<Todo> delete(@PathVariable Long id){
+	List<Todo> delete(@PathVariable("id") Long id){
 		return todoService.delete(id);
 	}
 }
