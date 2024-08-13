@@ -33,11 +33,11 @@ Para fazer as requisições HTTP abaixo, foi utilizada a ferramenta Insomnia:
 http://localhost:8080/todos
 
   {
-    "descricao": "Desc Todo 1",
+    "description": "Desc Todo 1",
     "id": 1,
-    "nome": "Todo 1",
-    "prioridade": 1,
-    "realizado": false
+    "name": "Todo 1",
+    "priority": 1,
+    "completed": false
   }
 
 <h2>Listar Tarefas (GET): </h2>
@@ -45,21 +45,21 @@ http://localhost:8080/todos
 
 
   {
-    "descricao": "Desc Todo 1",
+    "description": "Desc Todo 1",
     "id": 1,
-    "nome": "Todo 1",
-    "prioridade": 1,
-    "realizado": false
+    "name": "Todo 1",
+    "priority": 1,
+    "completed": false
   }
 
 <h2>Atualizar Tarefa (PUT)</h2>
 http://localhost:8080/todos
   {
-    "descricao": "Desc Todo 1 Up",
+    "description": "Desc Todo 1,2",
     "id": 1,
-    "nome": "Todo 1 Up",
-    "prioridade": 2,
-    "realizado": false
+    "name": "Todo 1,2",
+    "priority": 2,
+    "completed": false
   }
 
 <h2>Remover Tarefa: </h2>
