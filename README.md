@@ -3,18 +3,22 @@
 Uma API para gerenciar tarefas (CRUD), um projeto simples, mas com várias tecnologias inclusas.
 
 <h2>Tecnologias: </h2>
-Spring Boot
-Spring MVC
-Spring Data JPA
-SpringDoc OpenAPI 3
-Mysql
-Práticas adotadas
-SOLID, DRY, YAGNI, KISS
-API REST
-Consultas com Spring Data JPA
-Injeção de Dependências
-Tratamento de respostas de erro
-Geração automática do Swagger com a OpenAPI 3
+<ul>
+  <li>
+ Spring Boot
+  Spring MVC
+  Spring Data JPA
+  SpringDoc OpenAPI 3
+  Mysql
+  Práticas adotadas
+  SOLID, DRY, YAGNI, KISS
+  API REST
+  Consultas com Spring Data JPA
+  Injeção de Dependências
+  Tratamento de respostas de erro
+  Geração automática do Swagger com a OpenAPI 3
+  </li>
+</ul>
 
 <h2>Como Executar</h2>
 Clonar repositório git
